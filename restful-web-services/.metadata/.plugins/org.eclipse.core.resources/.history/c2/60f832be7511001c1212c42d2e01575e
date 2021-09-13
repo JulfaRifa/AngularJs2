@@ -1,0 +1,16 @@
+package com.julfa.rest.webservices.restfulwebservices.todo;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class TodoHardcodedService {
+	
+	private static List<Todo> todos = new ArrayList();
+	private static int idCounter;
+	
+	static {
+		todos.add(new Todo(++idCounter, "julfa", "Learn Angular", false, new Date()));
+	}
+
+}
